@@ -19,17 +19,21 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: t('Liquidity'),
         href: '/pool',
       },
-      {
+/*       {
         label: t('LP Migration'),
         href: 'https://v1exchange.pancakeswap.finance/#/migrate',
-      },
+      }, */
     ],
   },
+
   {
     label: t('Farms'),
     icon: 'FarmIcon',
-    href: '/farms',
+    href: 'https://linktofarmsUI.com',
   },
+
+  /* 
+
   {
     label: t('Pools'),
     icon: 'PoolIcon',
@@ -116,7 +120,8 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         href: 'https://pancakeswap.creator-spring.com/',
       },
     ],
-  },
+  }, */
+
 ]
 
 export default config

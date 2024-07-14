@@ -40,27 +40,10 @@ const FarmedStakingCard = () => {
   const { account } = useWeb3React()
   const { t } = useTranslation()
   const { toastSuccess, toastError } = useToast()
-  const farmsWithBalance = useFarmsWithBalance()
+  // const farmsWithBalance = useFarmsWithBalance()
   const masterChefContract = useMasterchef()
-  const balancesWithValue = farmsWithBalance.filter((balanceType) => balanceType.balance.gt(0))
+  // const balancesWithValue = farmsWithBalance.filter((balanceType) => balanceType.balance.gt(0))
 
-  const harvestAllFarms = useCallback(async () => {
-    setPendingTx(true)
-    // eslint-disable-next-line no-restricted-syntax
-    for (const farmWithBalance of balancesWithValue) {
-      try {
-        // eslint-disable-next-line no-await-in-loop
-        await harvestFarm(masterChefContract, farmWithBalance.pid)
-        toastSuccess(
-          `${t('Harvested')}!`,
-          t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'CAKE' }),
-        )
-      } catch (error) {
-        toastError(t('Error'), t('Please try again. Confirm the transaction and make sure you are paying enough gas!'))
-      }
-    }
-    setPendingTx(false)
-  }, [balancesWithValue, masterChefContract, toastSuccess, toastError, t])
 
   return (
     <StyledFarmStakingCard>
@@ -71,30 +54,12 @@ const FarmedStakingCard = () => {
         <CardImage src="/images/cake.svg" alt="cake logo" width={64} height={64} />
         <Block>
           <Label>{t('CAKE to Harvest')}:</Label>
-          <CakeHarvestBalance farmsWithBalance={balancesWithValue} />
         </Block>
         <Block>
           <Label>{t('CAKE in Wallet')}:</Label>
           <CakeWalletBalance />
         </Block>
-        <Actions>
-          {account ? (
-            <Button
-              id="harvest-all"
-              disabled={balancesWithValue.length <= 0 || pendingTx}
-              onClick={harvestAllFarms}
-              width="100%"
-            >
-              {pendingTx
-                ? t('Collecting CAKE')
-                : t('Harvest all (%count%)', {
-                    count: balancesWithValue.length,
-                  })}
-            </Button>
-          ) : (
-            <ConnectWalletButton width="100%" />
-          )}
-        </Actions>
+
       </CardBody>
     </StyledFarmStakingCard>
   )
