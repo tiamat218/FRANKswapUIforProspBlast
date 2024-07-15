@@ -61,7 +61,8 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
             <Text color="textSubtle" small mb="16px">
               {t('You’ll need an active PancakeSwap Profile to take part in an IFO!')}
             </Text>
-            {isStepValid ? (
+
+{/*             {isStepValid ? (
               <Text color="success" bold>
                 {t('Profile Active!')}
               </Text>
@@ -69,7 +70,8 @@ const IfoSteps: React.FC<Props> = ({ ifo, walletIfoData }) => {
               <Button as={Link} href="/profile">
                 {t('Activate your Profile')}
               </Button>
-            )}
+            )} */}
+
           </CardBody>
         )
       case 1:

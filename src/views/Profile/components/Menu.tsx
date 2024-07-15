@@ -21,16 +21,18 @@ const Menu: React.FC<MenuProps> = ({ activeIndex = 0 }) => {
         </RouterLink>
       </Flex>
 
-      <Flex mb="24px" justifyContent="center">
+{/*       <Flex mb="24px" justifyContent="center">
         <ButtonMenu activeIndex={activeIndex} variant="subtle" scale="sm">
-          <ButtonMenuItem as={RouterLink} to="/profile/tasks">
+   
+         <ButtonMenuItem as={RouterLink} to="/profile/tasks">
             {t('Task Center')}
           </ButtonMenuItem>
           <ButtonMenuItem as={RouterLink} to="/profile">
             {t('Public Profile')}
-          </ButtonMenuItem>
+          </ButtonMenuItem> 
         </ButtonMenu>
-      </Flex>
+      </Flex> */}
+
     </>
   )
 }

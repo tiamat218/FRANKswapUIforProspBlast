@@ -23,9 +23,11 @@ const ReactivateProfile: React.FC<CompetitionProps> = ({ onDismiss }) => {
       <Text>
         {t('You need to reactivate your profile by replacing your profile picture in order to join the competition.')}
       </Text>
-      <Button mt="24px" width="100%" onClick={handleClick}>
+
+{/*       <Button mt="24px" width="100%" onClick={handleClick}>
         {t('Go to my profile')}
-      </Button>
+      </Button> */}
+
     </>
   )
 }

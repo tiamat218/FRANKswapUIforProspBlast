@@ -10,7 +10,7 @@ import EarnAPRCard from 'views/Home/components/EarnAPRCard'
 import EarnAssetCard from 'views/Home/components/EarnAssetCard'
 import PredictionPromotionCard from 'views/Home/components/PredictionPromotionCard'
 import LotteryPromotionCard from 'views/Home/components/LotteryPromotionCard'
-import LotteryBanner from 'views/Home/components/LotteryBanner'
+
 import useFetchLotteryForPromos from 'views/Home/hooks/useFetchLotteryForPromos'
 
 const Hero = styled.div`
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <LotteryBanner currentLotteryPrize={currentLotteryPrize} />
+     
       <Page>
         <Hero>
           <Heading as="h1" scale="xl" mb="24px" color="secondary">
@@ -103,16 +103,18 @@ const Home: React.FC = () => {
         <div>
           <Cards>
             <FarmStakingCard />
-            <PredictionPromotionCard />
+            {/* <PredictionPromotionCard /> */}
           </Cards>
-          <CTACards>
+
+{/*           <CTACards>
             <EarnAPRCard />
             <EarnAssetCard />
             <LotteryPromotionCard currentLotteryPrize={currentLotteryPrize} />
-          </CTACards>
+          </CTACards> */}
+
           <Cards>
             <CakeStats />
-            <TotalValueLockedCard />
+            {/* <TotalValueLockedCard /> */}
           </Cards>
         </div>
       </Page>

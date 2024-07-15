@@ -31,12 +31,12 @@ const Profile = () => {
   return (
     <Page>
       <Header />
-      <Route exact path="/profile">
+{/*       <Route exact path="/profile">
         <PublicProfile />
       </Route>
       <Route path="/profile/tasks">
         <TaskCenter />
-      </Route>
+      </Route> */}
     </Page>
   )
 }
