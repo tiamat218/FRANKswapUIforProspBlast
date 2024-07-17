@@ -5,40 +5,63 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Home'),
     icon: 'HomeIcon',
-    href: '/',
+    href: 'https://deploy-farm-ui-prosperity-swap.vercel.app/',
   },
-  {
-    label: t('Trade'),
-    icon: 'TradeIcon',
-    items: [
-      {
-        label: t('Exchange'),
-        href: '/swap',
-      },
-      {
-        label: t('Liquidity'),
-        href: '/pool',
-      },
-/*       {
-        label: t('LP Migration'),
-        href: 'https://v1exchange.pancakeswap.finance/#/migrate',
-      }, */
-    ],
-  },
+
 
   {
     label: t('Farms'),
     icon: 'FarmIcon',
-    href: 'https://linktofarmsUI.com',
+    href: 'https://deploy-farm-ui-prosperity-swap.vercel.app/farms',
   },
-
-  /* 
 
   {
-    label: t('Pools'),
+    label: t('Pool'),
     icon: 'PoolIcon',
-    href: '/pools',
+    href: 'https://deploy-farm-ui-prosperity-swap.vercel.app/pools',
   },
+
+  {
+    label: t('Swap'),
+    icon: 'TradeIcon',
+    href: '/swap',
+  },
+  {
+    label: 'Price Info',
+    icon: 'InfoIcon',
+    items: [
+
+      {
+        label: 'GMT on Dexscreener',
+        href: 'https://dexscreener.com/blast/0xd0dc1af4f93916d662fdbcfaf5b5e2904f7d5514',
+      }
+    ],
+
+  },
+
+
+
+
+
+  {
+    label: 'More / Team',
+    icon: 'MoreIcon',
+    items: [
+    
+      {
+        label: 'Developer',
+        href: 'https://linkedin.com/in/frank-kulow',
+      },
+
+      {
+        label: 'Team',
+        href: '/team',
+      },
+    ],
+  },
+  /* 
+
+
   {
     label: t('Prediction (BETA)'),
     icon: 'PredictionsIcon',
