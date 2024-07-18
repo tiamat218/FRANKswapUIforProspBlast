@@ -1,7 +1,6 @@
 import tokens from 'config/constants/tokens'
 import { Address } from './types'
 
-const { bondly, safemoon } = tokens
 
 interface WarningToken {
   symbol: string
@@ -13,8 +12,6 @@ interface WarningTokenList {
 }
 
 const SwapWarningTokens = <WarningTokenList>{
-  safemoon,
-  bondly,
 }
 
 export default SwapWarningTokens
