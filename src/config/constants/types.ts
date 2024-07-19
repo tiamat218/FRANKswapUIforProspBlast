@@ -2,8 +2,9 @@ import BigNumber from 'bignumber.js'
 import { SerializedBigNumber, TranslatableText } from 'state/types'
 
 export interface Address {
+  81457?: string
   97?: string
-  56: string
+  56?: string
 }
 
 export interface Token {

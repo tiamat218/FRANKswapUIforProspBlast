@@ -37,7 +37,7 @@ export const usePollCoreFarmData = () => {
   const { fastRefresh } = useRefresh()
 
   useEffect(() => {
-    dispatch(fetchFarmsPublicDataAsync([251, 252]))
+    dispatch(fetchFarmsPublicDataAsync([0, 1]))  // pool ids for token BNB and token USD pool 
   }, [dispatch, fastRefresh])
 }
 
