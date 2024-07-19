@@ -177,8 +177,10 @@ export function useTokenContract(tokenAddress?: string, withSignerIfPossible?: b
 
 export function useWETHContract(withSignerIfPossible?: boolean): Contract | null {
   const { chainId } = useActiveWeb3React()
-  return useContract( '0x4300000000000000000000000000000000000004',WETH_ABI, withSignerIfPossible)
+  return useContract( '0x4300000000000000000000000000000000000004', WETH_ABI, withSignerIfPossible)
 }
+
+// statt weth addr chainId ? WETH[chainId].address : undefined,
 
 export function useENSRegistrarContract(withSignerIfPossible?: boolean): Contract | null {
   const { chainId } = useActiveWeb3React()
