@@ -7,7 +7,7 @@ const farms: FarmConfig[] = [
    */
   {
     pid: 0,
-    lpSymbol: 'WETH-GMT LP',
+    lpSymbol: 'BNB-GMT LP',
     lpAddresses: {
       81457: '0xd0dc1af4f93916d662fdbcfaf5b5e2904f7d5514',
       97: '',
@@ -18,7 +18,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 1,
-    lpSymbol: 'WETH-USDB LP',
+    lpSymbol: 'BNB-USDB LP',
     lpAddresses: {
       81457: '0xc715cb6e8a172473d56221218586ccea6b33428a',
       97: '',
@@ -29,7 +29,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 2,
-    lpSymbol: 'WETH-BTC LP',
+    lpSymbol: 'BNB-BTC LP',
     lpAddresses: {
       81457: '0xbb046b9d386ac5c9409d5ad89c67dfe293322aa3',
       97: '',      

@@ -27,11 +27,24 @@ function useTokensFromMap(tokenMap: TokenAddressMap, includeUserAdded: boolean):
   return useMemo(() => {
     if (!chainId) return {}
 
-    // reduce to just tokens
-    const mapWithoutUrls = Object.keys(tokenMap[chainId]).reduce<{ [address: string]: Token }>((newMap, address) => {
+
+/*     const object1 = {
+      a: 'somestring',
+      b: 42,
+      c: false,
+    }; */
+    
+/*     // reduce to just tokens
+    const mapWithoutUrlspt1 = Object.keys(tokenMap[chainId]);
+    
+    
+    const mapWithoutUrls = mapWithoutUrlspt1.reduce <{ [address: string]: Token }> ((newMap, address) => {
       newMap[address] = tokenMap[chainId][address].token
       return newMap
-    }, {})
+    }, {})  */
+
+    const mapWithoutUrls = {};
+
 
     if (includeUserAdded) {
       return (
@@ -50,7 +63,7 @@ function useTokensFromMap(tokenMap: TokenAddressMap, includeUserAdded: boolean):
     }
 
     return mapWithoutUrls
-  }, [chainId, userAddedTokens, tokenMap, includeUserAdded])
+  }, [chainId, userAddedTokens,  includeUserAdded])  //  tokenMap, hier rausgenommen
 }
 
 export function useDefaultTokens(): { [address: string]: Token } {
