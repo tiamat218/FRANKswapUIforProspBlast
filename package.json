@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "patch-package",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -11,8 +12,7 @@
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format:check": "prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
     "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
-    "updateLPsAPR": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/updateLPsAPR.ts",
-    "postinstall": "patch-package"
+    "updateLPsAPR": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/updateLPsAPR.ts"
   },
 
   "husky": {
