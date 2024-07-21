@@ -1,6 +1,6 @@
 /* eslint-disable no-continue */
 /* eslint-disable no-await-in-loop */
-import { TokenList, TokenInfo } from '@uniswap/token-lists'
+import { TokenList } from '@uniswap/token-lists'
 import schema from '@uniswap/token-lists/src/tokenlist.schema.json'
 import Ajv from 'ajv'
 import contenthashToUri from './contenthashToUri'
@@ -8,17 +8,6 @@ import { parseENSAddress } from './ENS/parseENSAddress'
 import uriToHttp from './uriToHttp'
 
 const tokenListValidator = new Ajv({ allErrors: true }).compile(schema)
-
-const TARGET_CHAIN_ID = 81457
-
-/**
- * Filters tokens based on the TARGET_CHAIN_ID
- * @param list TokenList
- */
-const filterTokensByChainId = (list: TokenList): TokenList => {
-  const filteredTokens = list.tokens.filter((token: TokenInfo) => token.chainId === TARGET_CHAIN_ID)
-  return { ...list, tokens: filteredTokens }
-}
 
 /**
  * Contains the logic for resolving a list URL to a validated token list
@@ -76,8 +65,7 @@ export default async function getTokenList(
         }, '') ?? 'unknown error'
       throw new Error(`Token list failed validation: ${validationErrors}`)
     }
-    const filteredList = filterTokensByChainId(json as TokenList)
-    return filteredList
+    return json as TokenList
   }
   throw new Error('Unrecognized list URL protocol.')
 }
