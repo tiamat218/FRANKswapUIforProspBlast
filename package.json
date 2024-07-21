@@ -64,6 +64,7 @@
     "date-fns": "^2.21.3",
     "easymde": "^2.15.0",
     "ethers": "^5.1.4",
+    "filecoin-signing-tools-js": "git+https://github.com/Digital-MOB-Filecoin/filecoin-signing-tools-js.git",
     "graphql": "^15.5.0",
     "graphql-request": "^3.4.0",
     "js-cookie": "^2.2.1",
