@@ -11,38 +11,38 @@
   "keywords": ["pancake", "default"],
   "tokens": [
     {
-      "name": "Wrappen Ethereum", 
-      "symbol": "wETH",
-      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
-      "chainId": 56,
+      "name": "Wrappen BNB", 
+      "symbol": "wBNB",
+      "address": "0x4300000000000000000000000000000000000004",
+      "chainId": 81457,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
+      "logoURI": "https://pancakeswap.finance/images/tokens/0x4300000000000000000000000000000000000004.png"
     },
     {
       "name": "USDB",
       "symbol": "USDB",
-      "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
-      "chainId": 56,
+      "address": "0x4300000000000000000000000000000000000003",
+      "chainId": 81457,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0xe9e7cea3dedca5984780bafc599bd69add087d56.png"
+      "logoURI": "https://pancakeswap.finance/images/tokens/0x4300000000000000000000000000000000000003.png"
     },
 
     {
       "name": "Bitcoin",
       "symbol": "BTC",
-      "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
-      "chainId": 56,
+      "address": "0xF7bc58b8D8f97ADC129cfC4c9f45Ce3C0E1D2692",
+      "chainId": 81457,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c.png"
+      "logoURI": "https://pancakeswap.finance/images/tokens/0xF7bc58b8D8f97ADC129cfC4c9f45Ce3C0E1D2692.png"
     },
     
     {
       "name": "Global Money Token",
       "symbol": "GMT",
-      "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
-      "chainId": 56,
+      "address": "0xB60dF4A1db61B173d0d774ffa813C3c37070E38b",
+      "chainId": 81457,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82.png"
+      "logoURI": "https://pancakeswap.finance/images/tokens/0xB60dF4A1db61B173d0d774ffa813C3c37070E38b.png"
     }
    
   ]

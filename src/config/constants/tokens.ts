@@ -7,7 +7,14 @@ export const CAKE: { [chainId: number]: Token } = {
     18,
     'CAKE',
     'PancakeSwap Token',
-  )
+  ),
+  [ChainId.TESTNET]: new Token(
+    ChainId.TESTNET,
+    '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
+    18,
+    'CAKE',
+    'PancakeSwap Token',
+  ),
 }
 export const BUSD: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
@@ -16,11 +23,24 @@ export const BUSD: { [chainId: number]: Token } = {
     18,
     'BUSD',
     'Binance USD',
-  )
+  ),
+  [ChainId.TESTNET]: new Token(
+    ChainId.TESTNET,
+    '0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee',
+    18,
+    'BUSD',
+    'Binance USD',
+  ),
 }
+
+
+
+
+
 
 export const WBNB = new Token(ChainId.MAINNET,'0x4300000000000000000000000000000000000004', 18, 'WBNB', 'Wrapped BNB')
 export const BTCB = new Token(ChainId.MAINNET,'0xF7bc58b8D8f97ADC129cfC4c9f45Ce3C0E1D2692', 18, 'BTCB', 'Bitcoin')
+export const WETH = new Token(ChainId.MAINNET,'0x4300000000000000000000000000000000000004', 18, 'WETH', 'Wrapped ETH')
 
 // export const CAKE = new Token(ChainId.MAINNET,'0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82', 18, 'CAKE', 'PancakeSwap Token')
 // export const BUSD = new Token(ChainId.MAINNET,'0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', 18, 'BUSD', 'Binance USD')
@@ -29,10 +49,7 @@ export const BTCB = new Token(ChainId.MAINNET,'0xF7bc58b8D8f97ADC129cfC4c9f45Ce3
 
 const tokens = {
 
-  bnb: {
-    symbol: 'BNB',
-    projectLink: '',
-  },
+
 
   cake: {
     symbol: 'CAKE',
