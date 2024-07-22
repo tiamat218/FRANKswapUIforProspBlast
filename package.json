@@ -5,7 +5,8 @@
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "echo 'Skipping npm install' && npm run build:local",
+    "build:local": "react-scripts build",
     "vercel-build": "echo 'Using preinstalled node_modules'; react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
